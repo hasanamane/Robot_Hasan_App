@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 10px;
+}
+.bot-app{
+  height: 200vh;
+    background-color: #1D80FA;
+}
+.bot-app .content .bot-info {
+    display: flex;
+  
+    flex-direction: row;
+    background-color: #1E7AD6;
+    width: 100%;
+    height: 24px;
+}
+.bot-app .bot-info .bot-img img{
+    margin: 4px;
+    width: 20px;
+    position: fixed;
+    height: 20px;
+    top: 0;
+
+border-radius: 50%;
+}
+
+
+
+.bot-app .bot-info h2{
+    margin: 4px;
+
+    position: fixed;
+    padding-left: 24px;
+    padding-top: 4px;
+}
+.bot-app .bot-info p{
+    position: fixed;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.415);
+    padding: 5px;
+    padding-left: 10px;
+    width: 100%;
+    display:none;
+}
+.bot-app .bot-info p.active{
+    display:flex;
+}
+.bot-app form{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    
+
+}
+.bot-app form #message{
+    width: 80%;
+    border: none;
+    padding: 4px;
+    outline: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.43);
+
+}
+.bot-app form #message::placeholder{
+    color: white;
+
+}
+.bot-app form #send{
+    width: 20%;
+    border: none;
+    padding: 4px;
+    outline: 0;
+    color: white;
+    background-color: rgb(40, 40, 121);
+    cursor: pointer;
+}
+/* .setings .sd{
+    display: flex;
+   position:absolute;
+    top: 0px;
+    left: 150px;
+    cursor: pointer;
+} */
+@media  (max-width:250px){
+    .setings .sd{
+        display: flex;
+       position:absolute;
+        top: 0px;
+        left: 150px;
+        cursor: pointer;
+    }
+    .setings .card{
+        /* display: flex; */
+        flex-direction: column;
+        margin-left: 50px;
+        margin-top: 19px;
+        background-color: white;
+        padding: 1px;
+        display: none;
+        cursor: pointer;
+   
+        
+        
+        }
+}
+@media  (min-width:250px){
+    .setings .sd{
+        display: flex;
+       position:absolute;
+        top: 0px;
+        left: 250px;
+        cursor: pointer;
+    }
+    .setings .card{
+        /* display: flex; */
+        flex-direction: column;
+        margin-left: 150px;
+        margin-top: 19px;
+        background-color: white;
+        padding: 1px;
+        display: none;
+        cursor: pointer;
+   
+        
+        
+        }
+}
+@media  (min-width:450px){
+    .setings .sd{
+        display: flex;
+       position:absolute;
+        top: 0px;
+        left: 450px;
+        cursor: pointer;
+    }
+    .setings .card{
+        /* display: flex; */
+        flex-direction: column;
+        margin-left: 350px;
+        margin-top: 19px;
+        background-color: white;
+        padding: 1px;
+        display: none;
+        cursor: pointer;
+   
+        
+        
+        }
+}
+.setings .sd::before{
+    content: '...';
+    color: white;
+    font-size: 2rem;
+
+
+}
+
+.setings .card.active{
+    display: flex;
+}
+
+.setings .card span{
+    /* border-bottom: 1px solid rgba(24, 23, 23, 0.525); */
+    padding: 5px;
+
+}
+.bot-app #chat-area{
+    margin-top: 0px;
+}
+.bot-app #chat-area .msg{
+    background-color: #dfe6e9;
+    padding: 5px;
+}
+.bot-app #chat-area .answer{
+  
+    background-color: #74b9ff;
+    padding: 5px;
+
+}
