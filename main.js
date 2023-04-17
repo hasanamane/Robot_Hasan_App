@@ -8,8 +8,6 @@ setings.addEventListener("click",function(){
  card.classList.toggle("active");
 });
 
-
-
 async function getBotAnswer(){
     const rersponsText = await fetch("bot_answer.json");
     const data = await rersponsText.json();
@@ -35,4 +33,4 @@ form.onsubmit = (e) => {
     inputMessage.value="";
 }
 }
-getBotAnswer()
+getBotAnswer();
